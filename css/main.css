@@ -60,13 +60,13 @@ h2,h3 {
 }
 
 a {
-    color:darkcyan;
+    color: var(--mauve-deep);
     text-decoration: none;
 }
 
 a:hover {
-    color: whitesmoke;
-    background-color: darkcyan;
+    color: var(--card-bg);
+    background-color: var(--mauve-deep);
     text-decoration: none;
 }
 
