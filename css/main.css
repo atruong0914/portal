@@ -162,7 +162,9 @@ footer {
   }
   
   .project-card:hover {
-    transform: translateY(-2px); /* Subtle interaction cue */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px -4px rgba(201, 123, 138, 0.28);
+    border-left-color: var(--rose-accent);
   }
   
   /* The Magic Mirror: Automatically alternate left/right layout */
