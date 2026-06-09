@@ -37,9 +37,12 @@ body {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: normal;
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+    color: var(--charcoal);
     margin: auto;
-    background: #fff;
+    background: var(--card-bg);
     line-height: 2.5em;
 }
 
