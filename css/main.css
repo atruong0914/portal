@@ -50,6 +50,7 @@ main.wrapper {
 
 p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
+    color: var(--charcoal);
 }
 
 h2,h3 {
