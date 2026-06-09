@@ -237,16 +237,22 @@ footer {
   }
   
   /* Responsive Overrides: If screen is small, stack everything vertically */
-  @media (max-width: 650px) {
-    .project-card, 
+@media (max-width: 650px) {
+    .project-card,
     .project-card:nth-child(even) {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
+        border-left: 1px solid var(--border-soft); /* Reset petal edge on mobile */
     }
-    
+ 
     .project-links {
-      justify-content: center;
+        justify-content: center;
     }
-  }
+ 
+    .project-image img {
+        width: 120px;
+        height: 120px;
+    }
+}
 
 /* end project container rules */
