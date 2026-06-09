@@ -44,7 +44,7 @@ h1 {
 }
 
 main.wrapper {
-    background-color: white;
+    background-color:var(--card-bg);
     overflow: auto;
 }
 
