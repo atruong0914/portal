@@ -120,7 +120,7 @@ main.home-wrapper {
     background-color: #fff5f7;
     border: 5px solid #f9ebed;
     border-radius: 50px;
-    box-shadow: 0 4px 16px rgba(170, 116, 116, 0.5);
+    box-shadow: 0 4px 16px var(--box-shadow);
     overflow: hidden;
     position: relative;
 }

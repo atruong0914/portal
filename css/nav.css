@@ -23,14 +23,14 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
-    border: 2.5px solid rgb(163, 114, 114);
-    border-radius: 25px;
     padding: 10px;
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    box-shadow: 0 2px 5px rgba(170, 116, 116, 0.5);
     background-color: rgb(255, 255, 255);
+    border: 5px solid #f9ebed;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px var(--box-shadow);
 }
 
 .topnav li {
@@ -39,7 +39,7 @@
 
 .topnav a {
     text-decoration: none;
-    color: rgb(107, 76, 68);
+    color: var(--charcoal);
     font-size: 1.3em;
     font-weight: bold;
     padding: 10px 20px;
