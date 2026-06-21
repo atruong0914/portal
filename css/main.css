@@ -22,12 +22,12 @@ html {
 }
 
 body {
+    padding-top: 190px;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     background-color: var(--blush-white);
     color: var(--charcoal);
     margin: 0 auto;
-    padding: 20px;
     max-width: 1200px;
   }
 
@@ -99,7 +99,8 @@ header {
 }
 
 .inner-header {
-    width: 940px;
+    width: 90%;
+    max-width: 940px;
     margin: 0 auto;
     text-align: center;
     padding: 10px 0;
@@ -111,12 +112,13 @@ header {
 }
 
 main.home-wrapper {
-    width: 940px;
+    width: 90%;
+    max-width: 940px;
     margin: 0 auto;
     background-color: #fff5f7;
     border: 5px solid #f9ebed;
     border-radius: 50px;
-    box-shadow: rgba(170, 116, 116, 0.5);
+    box-shadow: 0 4px 16px rgba(170, 116, 116, 0.5);
     overflow: hidden;
     position: relative;
 }
