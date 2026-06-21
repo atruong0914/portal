@@ -88,6 +88,39 @@ footer {
 
 /* end global rules */
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+    background-color: #facece;
+}
+
+.inner-header {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-header {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main.home-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    background-color: #fff5f7;
+    border: 5px solid #f9ebed;
+    border-radius: 50px;
+    box-shadow: rgba(170, 116, 116, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
 /* Responsive rules */
 
 /* DESKTOP */

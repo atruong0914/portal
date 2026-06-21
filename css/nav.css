@@ -43,7 +43,12 @@
     display: block;
 }
 
-.topnav a:hover,
+.topnav a:hover {
+    color: #facece;
+    transform: scale(1.3);
+    font-weight: bold;
+}
+
 .topnav a.active {
     color: #facece;
     transform: scale(1.3);
