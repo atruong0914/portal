@@ -46,6 +46,7 @@
 
 .topnav a:hover {
     color: #facece;
+    background-color: transparent;
     transform: scale(1.3);
     font-weight: bold;
 }
