@@ -13,6 +13,7 @@
     --border-soft:  #F0D6DC;
     --text-muted:   #7A6A6E;
     --border-dark: #a67c84;
+    --shadow-pink: rgb(241, 213, 217);
     --box-shadow: rgba(170, 116, 116, 0.5);
 }
 
@@ -96,8 +97,8 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
-    background-color: #facece;
+    background-color: var(--blush-white);
+    box-shadow: 0 4px 14px var(--shadow-pink);
 }
 
 .inner-header {
