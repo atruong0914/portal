@@ -5,6 +5,7 @@
 
 :root {
     --blush-white:  #FDF0F3;
+    --blush-pink:#facece;
     --rose-accent:  #E8A0B0;
     --mauve-deep:   #C97B8A;
     --charcoal:     #2D2D2D;
@@ -13,6 +14,7 @@
     --text-muted:   #7A6A6E;
     --border-dark: #a67c84;
     --shadow-pink: rgb(241, 213, 217);
+    --box-shadow: rgba(170, 116, 116, 0.5);
 }
 
 
