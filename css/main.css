@@ -90,6 +90,11 @@ footer {
     margin-top: 2em;
 }
 
+main.home-wrapper footer {
+    flex: 1 1 100%;
+    width: 100%;
+}
+
 /* end global rules */
 
 header {
