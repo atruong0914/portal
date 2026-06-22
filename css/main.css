@@ -83,11 +83,11 @@ a:hover {
 footer {
     clear: both;
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
     color: var(--text-muted);
     font-size: 0.85rem;
     border-top: 1px solid var(--border-soft);
-    margin-top: 2em;
+    margin-top: 0.2em;
 }
 
 main.home-wrapper footer {
@@ -146,6 +146,7 @@ main.home-wrapper {
     align-items: flex-start;
     gap: 2.5em;
     padding: 40px;
+    padding-bottom: 8px;
 }
 
 .profile {
@@ -250,6 +251,10 @@ main.home-wrapper {
 .bio-content p b {
     color: var(--mauve-deep);
     font-size: 1.1em;
+}
+
+.bio-content p:last-child {
+    margin-bottom: 0;
 }
 
 .bio-content .demo-btn {
