@@ -301,6 +301,25 @@ main.home-wrapper {
     display: flex;
     gap: 12px;
   }
+
+.status-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.status-badge.in-progress {
+    background-color: var(--blush-white);
+    color: var(--mauve-deep);
+    border: 1px solid var(--rose-accent);
+}
+
   
   /* Flexible, clean Button styles */
   .btn {
