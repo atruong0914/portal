@@ -154,6 +154,10 @@ main.home-wrapper {
     transform: rotate(0deg);
 }
 
+.bio-content {
+    flex: 1 1 320px;
+}
+
 /* Responsive rules */
 
 /* DESKTOP */
