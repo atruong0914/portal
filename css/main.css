@@ -97,12 +97,12 @@ main.home-wrapper footer {
 
 .tagline {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-muted);
     letter-spacing: 0.5px;
-    margin-top: -6px;
-    margin-bottom: 16px;
+    margin-top: -4px;
+    margin-bottom: 12px;
 }
 
 /* end global rules */
@@ -123,11 +123,11 @@ header {
     max-width: 940px;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 0;
+    padding: 14px 0;
 }
 
 .logo-header {
-    font-size: 50px;
+    font-size: 2rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -225,7 +225,7 @@ main.home-wrapper {
     margin: 0 auto;
     padding: 20px;
   }
-
+/* 
   .subheader {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
@@ -233,8 +233,25 @@ main.home-wrapper {
     color: var(--charcoal);
     margin-left: 0;
     margin-bottom: 0.25em;
-}
+} */
  
+.subheader {
+    color: var(--mauve-deep);
+    position: relative;
+    padding-left: 14px;
+    border-left: 4px solid var(--rose-accent);
+}
+
+.bio-content p {
+    color: var(--charcoal);
+    max-width: 65ch; /* keeps line length comfortable to read */
+}
+
+.bio-content p b {
+    color: var(--mauve-deep);
+    font-size: 1.1em;
+}
+
 .subtitle {
     color: var(--text-muted);
     font-size: 1rem;
