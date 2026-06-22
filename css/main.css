@@ -52,8 +52,12 @@ h1 {
 }
 
 main.wrapper {
-    background-color:var(--card-bg);
-    overflow: auto;
+    background-color: #fff5f7;
+    border: 5px solid #f9ebed;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px var(--box-shadow);
+    padding: 40px;
+    overflow: hidden;
 }
 
 p {
