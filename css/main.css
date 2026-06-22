@@ -172,12 +172,6 @@ main.home-wrapper {
         padding-left: 1%;
     }
     
-    picture.profile img {
-        width: 40%;
-        float: left;
-        margin-right: 2em;
-    }
-    
 }
 
 /* TABLET */
@@ -190,12 +184,6 @@ main.home-wrapper {
     h1 {
         width: 89%;
         padding-left: 1%;
-    }
-    
-    picture.profile img {
-        width: 50%;
-        float: right;
-        margin-left: 1em;
     }
 
 }
@@ -210,10 +198,6 @@ main.home-wrapper {
         width: 99%;
         padding-left: 1%;
         font-size: 2.2rem;
-    }
-    
-    picture.profile img {
-        width: 100%;
     }
     
 }
@@ -350,6 +334,18 @@ main.home-wrapper {
     .project-image img {
         width: 120px;
         height: 120px;
+    }
+
+    main.home-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .profile {
+        flex: 0 0 auto;
+        width: 70%;
+        max-width: 280px;
     }
 }
 
