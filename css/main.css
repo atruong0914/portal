@@ -95,6 +95,16 @@ main.home-wrapper footer {
     width: 100%;
 }
 
+.tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    margin-top: -6px;
+    margin-bottom: 16px;
+}
+
 /* end global rules */
 
 header {
