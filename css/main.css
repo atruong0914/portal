@@ -476,6 +476,14 @@ main.home-wrapper {
 .pill-btn-outline:hover {
     background-color: var(--card-bg);
 }
+
+img.mail-icon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    object-fit: contain;
+}
   
   /* Responsive Overrides: If screen is small, stack everything vertically */
 @media (max-width: 650px) {
