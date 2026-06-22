@@ -1,2 +1,2 @@
-# portal-template
-A repo on which you can create a portal website to show your work
+# annika's portal
+My official portal, showcasing who I am and recent projects. Included are links to my GitHub, LinkedIn, and a contact form to reach me via email/phone!
