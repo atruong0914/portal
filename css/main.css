@@ -291,10 +291,10 @@ main.home-wrapper {
     flex-grow: 1;
   }
   
-  .project-content h2 {
+.project-content h2 {
     margin-top: 0;
-    color: #1e293b;
-  }
+    color: var(--mauve-deep);
+}
   
   .project-links {
     margin-top: 20px;
