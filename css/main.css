@@ -139,6 +139,7 @@ main.home-wrapper {
     background: var(--card-bg);
     padding: 12px 12px 32px 12px;
     box-shadow: 0 8px 20px var(--shadow-pink);
+    border: 1px solid var(--border-dark);
     border-radius: 4px;
     transform: rotate(-3deg);
     transition: transform 0.3s ease;
