@@ -67,50 +67,70 @@
 /* Responsive rules - apply when screen width is less than 1200px */
 
 @media screen and (max-width: 1199px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    
-    .topnav.responsive {
-        position: relative;
-    }
-    
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-}
 
-
-/* DESKTOP
-@media all and (min-width:1200px) {
-    .topnav {
-        width: 80%;
-    }
-}
-
-/* TABLET */
-/* @media all and (min-width:501px) and (max-width:1199px) {
-    .topnav {
-        width: 90%;
-    }
-} */
-
-/* PHONE */
-/* @media all and (max-width:500px) {
-    .topnav {
+    /* COLLAPSED MOBILE NAV LAYOUT */
+    .topnav ul {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 6px 24px;  
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        border-radius: 50px;
     }
-} */ 
+
+    /* 1. HIDE ALL LIST ITEMS BY DEFAULT ON MOBILE */
+    .topnav ul li {
+        display: none !important;
+    }
+
+    /* 2. FORCE ONLY THE LI CONTAINING THE ACTIVE LINK TO SHOW AND GO LEFT */
+    .topnav ul li:has(a.active) {
+        display: block !important;
+        order: 1;
+        margin-right: auto; /* Pushes the hamburger to the far right */
+    }
+
+    /* 3. FORCE THE HAMBURGER LI (LAST CHILD) TO ALWAYS SHOW AND GO RIGHT */
+    .topnav ul li:last-child {
+        display: block !important;
+        order: 2;
+    }
+
+    /* Display hamburger link symbol */
+    .topnav a.icon {
+        display: block;
+        padding: 8px;
+    }
+
+    /* EXPANDED MOBILE NAV LAYOUT (When open) */
+    .topnav.responsive ul {
+        flex-direction: column;
+        align-items: stretch; 
+        border-radius: 24px;   
+        padding: 15px;
+    }
+
+    /* RE-SHOW ALL ITEMS WHEN THE MENU IS EXPANDED */
+    .topnav.responsive ul li {
+        display: block !important;
+        width: 100%;
+        text-align: center;
+        order: unset !important; 
+    }
+
+    .topnav.responsive a {
+        display: block;
+        padding: 12px 0;
+    }
+
+    /* Pin the hamburger button cleanly inside open state */
+    .topnav.responsive li:last-child {
+        position: absolute;
+        right: 25px;
+        top: 12px;
+        width: auto;
+        order: unset !important;
+    }
+}

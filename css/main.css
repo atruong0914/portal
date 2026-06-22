@@ -158,6 +158,7 @@ main.home-wrapper {
     display: block;
     width: 100%;
     border-radius: 2px;
+    height: auto;
 }
 
 .profile:hover {
@@ -168,34 +169,6 @@ main.home-wrapper {
     flex: 1 1 320px;
 }
 
-/* Responsive rules */
-
-/* DESKTOP */
-@media all and (min-width:1200px) {
-    main.wrapper {
-        width: 80%;
-        margin: auto;
-    }
-
-}
-
-/* TABLET */
-@media all and (min-width:501px) and (max-width:1199px) {
-    main.wrapper {
-        width: 90%;
-        margin: auto;
-    }
-    
-}
-
-/* PHONE */
-@media all and (max-width:500px) {
-    main.wrapper {
-        width: 100%;
-    }
-    
-}
-
 /* start project container rules */
   
 .projects-container {
@@ -203,16 +176,7 @@ main.home-wrapper {
     margin: 0 auto;
     padding: 0;
   }
-/* 
-  .subheader {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--charcoal);
-    margin-left: 0;
-    margin-bottom: 0.25em;
-} */
- 
+
 .subheader {
     color: var(--mauve-deep);
     position: relative;
@@ -485,35 +449,99 @@ img.mail-icon {
     object-fit: contain;
 }
   
-  /* Responsive Overrides: If screen is small, stack everything vertically */
-@media (max-width: 650px) {
+
+
+/* 1. TABLET & LAPTOP LAYOUTS (Under 1200px) */
+@media screen and (max-width: 1199px) {
+    body {
+        padding-top: 220px; 
+        width: 100%;       /* Sets base width to full screen scale */
+        box-sizing: border-box;
+    }
+
+    /* Centers the main content layout blocks perfectly */
+    main.wrapper, main.home-wrapper {
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+}
+
+/*  SMALL SMARTPHONES (Under 650px) */
+@media screen and (max-width: 650px) {
+    body {
+        padding-top: 240px; 
+    }
+
+    main.home-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5em;
+        padding: 30px 20px;
+    }
+
+    /* Balanced polaroid frame on mobile screens */
+    .profile {
+        flex: 0 0 auto;
+        width: 75%;
+        max-width: 240px;
+        margin: 0 auto 10px;
+        transform: rotate(0deg); 
+        padding: 10px 10px 24px 10px;
+    }
+    
+    .profile img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bio-content {
+        width: 100%;
+    }
+
+    /* Heading rules update */
+    h2, h3, .subheader {
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0;
+        border-left: none;
+        border-bottom: 3px solid var(--rose-accent);
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+    }
+
+    /* Alternating Projects cards optimization */
     .project-card,
     .project-card:nth-child(even) {
         flex-direction: column;
         text-align: center;
-        border-left: 1px solid var(--border-soft); /* Reset petal edge on mobile */
+        padding: 20px;
+        border-left: 1px solid var(--border-soft);
     }
  
     .project-links {
         justify-content: center;
+        flex-wrap: wrap;
     }
  
     .project-image img {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
     }
 
-    main.home-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /* Form spacing fixes */
+    .message-card {
+        padding: 24px 16px;
     }
 
-    .profile {
-        flex: 0 0 auto;
-        width: 70%;
-        max-width: 280px;
+    .form-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pill-btn {
+        width: 100%;
     }
 }
-
-/* end project container rules */
